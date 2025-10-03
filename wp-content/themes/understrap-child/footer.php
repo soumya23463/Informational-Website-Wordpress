@@ -19,7 +19,7 @@ _deprecated_file(
 
 <hr />
 <div id="footer" role="contentinfo" style="text-align: center;">
-    <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All rights reserved.</p>
+	<p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All rights reserved.</p>
 </div>
 
 

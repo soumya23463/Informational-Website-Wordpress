@@ -142,3 +142,65 @@ function add_fresh_market_posts_bulk()
 	}
 }
 add_action('init', 'add_fresh_market_posts_bulk');
+
+
+// Register Testimonials Post Type
+function create_testimonials_cpt()
+{
+	$labels = array(
+		'name' => 'Testimonials',
+		'singular_name' => 'Testimonial',
+		'menu_name' => 'Testimonials',
+		'add_new' => 'Add New',
+		'add_new_item' => 'Add New Testimonial',
+		'edit_item' => 'Edit Testimonial',
+		'new_item' => 'New Testimonial',
+		'view_item' => 'View Testimonial',
+		'search_items' => 'Search Testimonials',
+		'not_found' => 'No Testimonials found',
+		'not_found_in_trash' => 'No Testimonials found in Trash',
+	);
+
+	$args = array(
+		'labels' => $labels,
+		'public' => true,
+		'has_archive' => false,
+		'show_in_menu' => true,
+		'menu_icon' => 'dashicons-testimonial',
+		'show_in_rest' => true,
+		'supports' => array('title', 'editor', 'thumbnail'),
+	);
+
+	register_post_type('testimonial', $args);
+}
+add_action('init', 'create_testimonials_cpt');
+
+
+
+function my_register_services_cpt()
+{
+	$labels = array(
+		'name'               => 'Services',
+		'singular_name'      => 'Service',
+		'add_new'            => 'Add New Service',
+		'add_new_item'       => 'Add New Service',
+		'edit_item'          => 'Edit Service',
+		'new_item'           => 'New Service',
+		'view_item'          => 'View Service',
+		'search_items'       => 'Search Services',
+		'not_found'          => 'No services found',
+		'not_found_in_trash' => 'No services found in Trash',
+	);
+
+	$args = array(
+		'labels'             => $labels,
+		'public'             => true,
+		'has_archive'        => false,
+		'rewrite'            => array('slug' => 'services'),
+		'supports'           => array('title', 'editor', 'thumbnail', 'excerpt'),
+		'menu_icon'          => 'dashicons-hammer', // आप icon बदल सकते हो
+	);
+
+	register_post_type('service', $args);
+}
+add_action('init', 'my_register_services_cpt');

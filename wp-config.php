@@ -19,12 +19,12 @@
  * @package WordPress
  */
 /* That's all, stop editing! Happy publishing. */
-define( 'WP_HOME', 'http://localhost/Informational-Website-Wordpress' );
-define( 'WP_SITEURL', 'http://localhost/Informational-Website-Wordpress' );
+define('WP_HOME', 'http://localhost/Informational-Website-Wordpress');
+define('WP_SITEURL', 'http://localhost/Informational-Website-Wordpress');
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'first_wordpress');
+define('DB_NAME', 'informational-website-wordpress');
 
 /** Database username */
 define('DB_USER', 'root');
