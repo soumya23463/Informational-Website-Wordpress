@@ -3,6 +3,7 @@
 /**
  * Front page template
  *
+ * Template Name: Home Page
  * @package Understrap Child
  */
 
@@ -27,10 +28,12 @@ if ($front_page_id && has_post_thumbnail($front_page_id)) {
     <div class="overlay"></div> <!-- optional dark overlay -->
 
     <div class="container position-relative">
-        <h1 class="display-4 font-weight-bold text-white">Full Cycle Business Management</h1>
+        <h1 class="display-4 font-weight-bold text-white"><?php echo get_field("title"); ?></h1>
         <p class="lead text-white">
-            Whether your company looks for a financial consulting, investment risks assessments or an interim, HR
-            management, we’re ready to provide that for you.We have a proven expertise in any process, that a modern day
+            Whether your company looks for a financial consulting, investment risks assessments or an interim,
+            HR
+            management, we’re ready to provide that for you.We have a proven expertise in any process, that a
+            modern day
             business lives and works through.
         </p>
         <a href="about-page/" class="btn btn-primary btn-lg">READ MORE</a>

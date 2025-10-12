@@ -198,7 +198,7 @@ function my_register_services_cpt()
 		'has_archive'        => false,
 		'rewrite'            => array('slug' => 'services'),
 		'supports'           => array('title', 'editor', 'thumbnail', 'excerpt'),
-		'menu_icon'          => 'dashicons-hammer', // आप icon बदल सकते हो
+		'menu_icon'          => 'dashicons-hammer',
 	);
 
 	register_post_type('service', $args);
