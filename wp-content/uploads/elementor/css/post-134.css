@@ -1,0 +1,15 @@
+.elementor-134 .elementor-element.elementor-element-9f7dee2{--display:flex;}.elementor-134 .elementor-element.elementor-element-c2b28f1{width:100%;max-width:100%;top:0px;}body:not(.rtl) .elementor-134 .elementor-element.elementor-element-c2b28f1{left:0px;}body.rtl .elementor-134 .elementor-element.elementor-element-c2b28f1{right:0px;}.elementor-134 .elementor-element.elementor-element-c2b28f1 .elementor-wrapper{--video-aspect-ratio:2.33333;}/* Start custom CSS for video, class: .elementor-element-c2b28f1 *//* Target Elementor video play button */
+.elementor-widget-video .elementor-custom-play-button {
+    background-color: rgba(255, 0, 0, 0.8); /* red with transparency */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* circular button */
+    border: 3px solid #fff; /* white border */
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.elementor-widget-video .elementor-custom-play-button:hover {
+    transform: scale(1.2);
+    background-color: rgba(255, 0, 0, 1); /* solid red */
+}/* End custom CSS */
